@@ -1,0 +1,2766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Arjun Balpande - Computer Science & Engineering Student at Symbiosis Institute of Technology, Nagpur. Explore projects in Agentic AI Multi-Agent Systems, Smart Grid Energy Forecasting Using ML, Student Deadline Reminder Automation, R-CNN Image Detection, Customer Segmentation (Patent Published), and Technical Skills.">
+  <meta name="keywords"
+    content="Arjun Balpande, Portfolio, Computer Science, SIT Nagpur, Smart Grid Energy Forecasting, Load Prediction, LSTM, XGBoost, Agentic AI, Multi-Agent Systems, Student Deadline Reminder Automation, Telegram Bot, Groq LLM, R-CNN, Python, Deep Learning, Web Development, JavaScript Lab CA3">
+  <meta name="author" content="Arjun Balpande">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Arjun Balpande | Computer Science Portfolio">
+  <meta property="og:description"
+    content="Official portfolio of Arjun Balpande - B.Tech CSE student at Symbiosis Institute of Technology, Nagpur. Smart Grid Energy Forecasting, Agentic AI, Workflow Automation, AI/ML, Python, and Software Development.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/arjun_profile.jpg">
+
+  <title>Arjun Balpande | Computer Science & Engineering Portfolio</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23080c14' stroke='%2300f2fe' stroke-width='4'/><text x='50' y='64' font-family='sans-serif' font-weight='800' font-size='44' fill='%2300f2fe' text-anchor='middle'>AB</text></svg>">
+</head>
+
+<body>
+  <!-- Background Glow Accents -->
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-orb orb-3" aria-hidden="true"></div>
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Arjun Balpande Home">
+        <span class="logo-badge">AB</span>
+        <span class="logo-text">Arjun</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#internships" class="nav-link">Internships</a></li>
+          <li><a href="#achievements" class="nav-link">Patents & Honors</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#career" class="nav-link">Career</a></li>
+          <li><a href="#socials" class="nav-link">Socials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="assets/Arjun_Balpande_Resume.pdf" download="Arjun_Balpande_Resume.pdf" class="btn btn-outline btn-sm"
+          id="btnNavResume">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Hamburger button for mobile -->
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="navMenu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section A: Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-status-pill" data-reveal>
+            <span class="status-dot"></span>
+            <span>B.Tech CSE Student &bull; SIT Nagpur</span>
+          </div>
+
+          <h1 class="hero-title" data-reveal>
+            Hi, I'm <span class="gradient-text">Arjun Balpande</span>
+          </h1>
+
+          <div class="hero-dynamic-subtitle" data-reveal>
+            <span class="static-prefix">I build </span>
+            <span class="dynamic-typed" id="typedText">AI/ML & Software Solutions</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description" data-reveal>
+            A motivated and detail-oriented Computer Science & Engineering student at <strong>Symbiosis Institute of
+              Technology (SIT), Nagpur</strong>. Strong foundation in Python, C, Web Development, and Deep Learning
+            research with a published patent in Customer Segmentation.
+          </p>
+
+          <div class="hero-cta-group" data-reveal>
+            <a href="#projects" class="btn btn-primary" id="btnHeroProjects">
+              <span>Explore My Work</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-glass" id="btnHeroContact">
+              <span>Contact Me</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </a>
+            <a href="https://github.com/arjunabalpande06" target="_blank" rel="noopener noreferrer"
+              class="btn btn-glass" id="btnHeroGitHub" aria-label="Arjun Balpande GitHub Profile">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/arjun-balpande-0a5114320/" target="_blank" rel="noopener noreferrer"
+              class="btn btn-glass" id="btnHeroLinkedIn" aria-label="Arjun Balpande LinkedIn Profile">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="assets/Arjun_Balpande_Resume.pdf" download="Arjun_Balpande_Resume.pdf" class="btn btn-outline"
+              id="btnHeroResume">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <!-- Verified Quick Info Tags -->
+          <div class="hero-meta-badges" data-reveal>
+            <div class="meta-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>Nagpur, Maharashtra (440010)</span>
+            </div>
+            <div class="meta-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              <span>Graduation: June 2028</span>
+            </div>
+            <div class="meta-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7" />
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+              </svg>
+              <span>Patent Published (K-Means)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Profile Element -->
+        <div class="hero-visual" data-reveal>
+          <div class="visual-wrapper">
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="avatar-container">
+              <img src="assets/arjun_profile.jpg" alt="Arjun Balpande - Computer Science Engineering Student"
+                class="hero-avatar" id="heroProfileImg">
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-ai" aria-hidden="true">
+              <span class="badge-icon">🤖</span>
+              <div>
+                <strong>R-CNN & AI</strong>
+                <span>Deep Learning</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-patent" aria-hidden="true">
+              <span class="badge-icon">📜</span>
+              <div>
+                <strong>Patent Published</strong>
+                <span>Customer Clustering</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-dev" aria-hidden="true">
+              <span class="badge-icon">⚡</span>
+              <div>
+                <strong>Python & C</strong>
+                <span>Algorithms & Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll to explore</span>
+      </a>
+    </section>
+
+    <!-- Section B: About Me -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Profile Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Dedicated computer science student passionate about practical problem-solving and
+            software development.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-bio" data-reveal>
+            <div class="bio-header">
+              <div class="bio-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <div>
+                <h3>Arjun Arun Balpande</h3>
+                <p class="text-accent">Undergraduate Computer Engineering Student</p>
+              </div>
+            </div>
+            <p class="bio-text">
+              I am a motivated and detail-oriented Computer Engineering student currently pursuing my Bachelor of
+              Technology (B.Tech) in Computer Science at <strong>Symbiosis Institute of Technology (SIT),
+                Nagpur</strong> (Batch 2024–2028).
+            </p>
+            <p class="bio-text">
+              With a strong foundation in programming languages including <strong>C, Python, HTML, and CSS</strong>,
+              alongside hands-on database management with <strong>MySQL and SQL</strong>, I focus on building reliable
+              software solutions and exploring advanced machine learning architectures like <strong>R-CNN and K-Means
+                clustering</strong>.
+            </p>
+            <p class="bio-text">
+              My goal is to obtain valuable industrial experience through an engineering internship where I can apply my
+              algorithmic thinking, learn enterprise engineering practices, and contribute meaningfully to impactful
+              software applications.
+            </p>
+
+            <div class="bio-highlights">
+              <div class="highlight-item">
+                <span class="highlight-num">1</span>
+                <span class="highlight-label">Published Patent</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-num">1</span>
+                <span class="highlight-label">Industry Internship</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-num" id="certCountHighlight">7</span>
+                <span class="highlight-label">Tech Certifications</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-num">4+</span>
+                <span class="highlight-label">Core Languages</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spoken Languages & Core Competencies -->
+          <div class="about-card sidebar-card" data-reveal>
+            <h3>Spoken Languages</h3>
+            <p class="sub-text">Documented proficiency levels</p>
+            <div class="lang-list">
+              <div class="lang-item">
+                <div class="lang-info">
+                  <span class="lang-name">English</span>
+                  <span class="lang-level">Intermediate (B1)</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width: 70%;"></div>
+                </div>
+              </div>
+              <div class="lang-item">
+                <div class="lang-info">
+                  <span class="lang-name">Hindi</span>
+                  <span class="lang-level">Intermediate (B1)</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width: 70%;"></div>
+                </div>
+              </div>
+              <div class="lang-item">
+                <div class="lang-info">
+                  <span class="lang-name">Marathi</span>
+                  <span class="lang-level">Intermediate (B1)</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width: 70%;"></div>
+                </div>
+              </div>
+              <div class="lang-item">
+                <div class="lang-info">
+                  <span class="lang-name">German</span>
+                  <span class="lang-level">Beginner (A1)</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width: 30%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="quick-contact-box">
+              <h4>Direct Contact</h4>
+              <ul class="contact-mini-list">
+                <li>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                  <a href="mailto:arjunbalpande@gmail.com">arjunbalpande@gmail.com</a>
+                </li>
+                <li>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                  <a href="tel:+918010871941">+91 8010871941</a>
+                </li>
+                <li>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <span>Nagpur, Maharashtra, India</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: Education Timeline -->
+    <section class="section section-dark" id="education">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Academic Pathway</span>
+          <h2 class="section-title">Education Journey</h2>
+          <p class="section-subtitle">Chronological progression of academic degrees, institutions, and core curriculum.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1: B.Tech -->
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot current"></div>
+            <div class="timeline-date">2024 &ndash; 2028 (Expected)</div>
+            <div class="timeline-card glass-panel current-card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-badge badge-active">Currently Pursuing</span>
+                  <h3 class="timeline-degree">Bachelor of Technology (B.Tech)</h3>
+                  <h4 class="timeline-major">Computer Science & Engineering (CSE)</h4>
+                </div>
+                <div class="timeline-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                  </svg>
+                </div>
+              </div>
+              <p class="timeline-institution">
+                <strong>Symbiosis Institute of Technology (SIT)</strong> &bull; Nagpur, Maharashtra, India
+              </p>
+              <p class="timeline-desc">
+                Enrolled in the 4-year undergraduate B.Tech program focusing on core computer science subjects,
+                algorithmic design, software engineering methodologies, data structures, and emerging AI technologies.
+              </p>
+              <div class="timeline-tags">
+                <span>Data Structures</span>
+                <span>C & Python Programming</span>
+                <span>Web Technologies</span>
+                <span>Database Systems</span>
+                <span>Discrete Math</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Class XII Senior Secondary -->
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Completed: April 2024</div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-badge">CBSE Class XII</span>
+                  <h3 class="timeline-degree">Senior School Certificate Examination (HSC)</h3>
+                  <h4 class="timeline-major">Science Stream (Physics, Chemistry, Maths, Computer Science)</h4>
+                </div>
+                <div class="timeline-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 14 14" />
+                  </svg>
+                </div>
+              </div>
+              <p class="timeline-institution">
+                <strong>St. Paul School</strong> &bull; Nagpur, Maharashtra, India
+              </p>
+              <p class="timeline-desc">
+                Completed Class XII under the Central Board of Secondary Education (CBSE), focusing on foundational
+                sciences, higher mathematics, physics, and computer science.
+              </p>
+              <div class="timeline-tags">
+                <span>Computer Science</span>
+                <span>Physics</span>
+                <span>Chemistry</span>
+                <span>Mathematics</span>
+                <span>English Core</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Class X Secondary School -->
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Completed: April 2022</div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-badge">CBSE Class X</span>
+                  <h3 class="timeline-degree">Secondary School Examination (SSC)</h3>
+                  <h4 class="timeline-major">General & Foundational Sciences</h4>
+                </div>
+                <div class="timeline-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                </div>
+              </div>
+              <p class="timeline-institution">
+                <strong>Bhavan's B.P. Vidya Mandir</strong> &bull; Wathoda, Nagpur, Maharashtra, India
+              </p>
+              <p class="timeline-desc">
+                Completed secondary schooling under CBSE with strong foundations in science, mathematics, literature,
+                and languages.
+              </p>
+              <div class="timeline-tags">
+                <span>Mathematics</span>
+                <span>Science</span>
+                <span>Social Studies</span>
+                <span>Sanskrit</span>
+                <span>English</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section E: Technical Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Categorized skills verified from academic curriculum, certifications, and active
+            projects.</p>
+        </div>
+
+        <!-- Filter Buttons for Skills -->
+        <div class="filter-bar" data-reveal>
+          <button class="filter-btn active" onclick="filterSkills('all', this)">All Skills</button>
+          <button class="filter-btn" onclick="filterSkills('languages', this)">Languages</button>
+          <button class="filter-btn" onclick="filterSkills('web', this)">Web Technologies</button>
+          <button class="filter-btn" onclick="filterSkills('ai', this)">AI & Data Science</button>
+          <button class="filter-btn" onclick="filterSkills('tools', this)">Databases & Tools</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Python -->
+          <div class="skill-card" data-category="languages ai" data-reveal>
+            <div class="skill-icon-wrap icon-python">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.91 0c-3.14 0-5.06.67-5.91 1.62-.87.97-.93 2.37-.93 4.19v2.53h6.84v.84H3.89c-1.84 0-3.32.74-3.89 2.22-.57 1.49-.57 3.32 0 4.81.57 1.48 2.05 2.22 3.89 2.22h2.24v-3.07c0-2.22 1.84-4.06 4.06-4.06h6.84c1.84 0 3.32-1.48 3.32-3.32V6.15c0-1.84-.93-3.22-1.8-4.19C17.68.67 15.05 0 11.91 0zm-2.02 2.31c.68 0 1.23.55 1.23 1.23 0 .68-.55 1.23-1.23 1.23-.68 0-1.23-.55-1.23-1.23 0-.68.55-1.23 1.23-1.23zM12.09 24c3.14 0 5.06-.67 5.91-1.62.87-.97.93-2.37.93-4.19v-2.53h-6.84v-.84h8.02c1.84 0 3.32-.74 3.89-2.22.57-1.49.57-3.32 0-4.81-.57-1.48-2.05-2.22-3.89-2.22h-2.24v3.07c0 2.22-1.84 4.06-4.06 4.06H6.97c-1.84 0-3.32 1.48-3.32 3.32v4.89c0 1.84.93 3.22 1.8 4.19.87.97 3.5 1.62 6.64 1.62zm2.02-2.31c-.68 0-1.23-.55-1.23-1.23 0-.68.55-1.23 1.23-1.23.68 0 1.23.55 1.23 1.23 0 .68-.55 1.23-1.23 1.23z" />
+              </svg>
+            </div>
+            <div class="skill-meta">
+              <h4>Python</h4>
+              <span class="skill-badge-verified">Core Language &bull; Certified</span>
+              <p>Object-Oriented Programming, Data Structures (Infosys DSA), Red Hat AD141, and Agentic AI workflows.</p>
+            </div>
+          </div>
+
+          <!-- C & C++ Programming -->
+          <div class="skill-card" data-category="languages" data-reveal>
+            <div class="skill-icon-wrap icon-cpp">
+              <span class="code-glyph">C++</span>
+            </div>
+            <div class="skill-meta">
+              <h4>C & C++</h4>
+              <span class="skill-badge-verified">Systems & OOP Foundations</span>
+              <p>Pointers, dynamic memory management, structured programming, object-oriented concepts, and systems logic.</p>
+            </div>
+          </div>
+
+          <!-- Core Computer Science -->
+          <div class="skill-card" data-category="languages tools" data-reveal>
+            <div class="skill-icon-wrap icon-cs">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <div class="skill-meta">
+              <h4>Core Computer Science</h4>
+              <span class="skill-badge-verified">Theory & Practical CS</span>
+              <p>Data Structures & Algorithms (DSA), Object-Oriented Programming (OOPS), Database Systems (DBMS), and Operating Systems.</p>
+            </div>
+          </div>
+
+          <!-- HTML5 -->
+          <div class="skill-card" data-category="web" data-reveal>
+            <div class="skill-icon-wrap icon-html">
+              <span class="code-glyph">&lt;/&gt;</span>
+            </div>
+            <div class="skill-meta">
+              <h4>HTML5</h4>
+              <span class="skill-badge-verified">Semantic Structure</span>
+              <p>Accessible DOM hierarchy, SEO elements, modern semantic tags, and standards compliance.</p>
+            </div>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="skill-card" data-category="web" data-reveal>
+            <div class="skill-icon-wrap icon-css">
+              <span class="code-glyph">#</span>
+            </div>
+            <div class="skill-meta">
+              <h4>CSS3</h4>
+              <span class="skill-badge-verified">Styling & Layouts</span>
+              <p>Flexbox, CSS Grid, custom properties, glassmorphism, responsive queries, and keyframe animations.</p>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-card" data-category="web" data-reveal>
+            <div class="skill-icon-wrap icon-js">
+              <span class="code-glyph">JS</span>
+            </div>
+            <div class="skill-meta">
+              <h4>JavaScript (ES6+)</h4>
+              <span class="skill-badge-verified">DOM & Interactions</span>
+              <p>Event delegation, DOM manipulation, asynchronous programming, IntersectionObserver, and client validation.</p>
+            </div>
+          </div>
+
+          <!-- Basics of Java -->
+          <div class="skill-card" data-category="languages" data-reveal>
+            <div class="skill-icon-wrap icon-java">
+              <span class="code-glyph">☕</span>
+            </div>
+            <div class="skill-meta">
+              <h4>Java (Basics)</h4>
+              <span class="skill-badge-verified">OOP Foundations</span>
+              <p>Basic syntax, class hierarchies, OOP principles, methods, and foundational structure.</p>
+            </div>
+          </div>
+
+          <!-- Machine Learning & Scikit-learn -->
+          <div class="skill-card" data-category="ai" data-reveal>
+            <div class="skill-icon-wrap icon-stats">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              </svg>
+            </div>
+            <div class="skill-meta">
+              <h4>Scikit-learn & Machine Learning</h4>
+              <span class="skill-badge-verified">Ensemble & Classifiers</span>
+              <p>Random Forest, SVM, Logistic Regression, Decision Trees, KNN, K-Means clustering, and cross-validation.</p>
+            </div>
+          </div>
+
+          <!-- Pandas, NumPy, Matplotlib & Seaborn -->
+          <div class="skill-card" data-category="ai" data-reveal>
+            <div class="skill-icon-wrap icon-numpy">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M3 9h18" />
+                <path d="M9 21V9" />
+              </svg>
+            </div>
+            <div class="skill-meta">
+              <h4>Pandas, NumPy, Matplotlib & Seaborn</h4>
+              <span class="skill-badge-verified">Data Analytics & Visualization</span>
+              <p>Data cleaning, missing value imputation, outlier detection, exploratory analysis (EDA), and statistical visualization.</p>
+            </div>
+          </div>
+
+          <!-- TensorFlow & OpenCV -->
+          <div class="skill-card" data-category="ai" data-reveal>
+            <div class="skill-icon-wrap icon-ai">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M3 12h3M18 12h3M12 3v3M12 18v3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" />
+              </svg>
+            </div>
+            <div class="skill-meta">
+              <h4>TensorFlow & OpenCV</h4>
+              <span class="skill-badge-verified">Computer Vision Research</span>
+              <p>R-CNN architecture, region proposals, bounding-box regression, image localization, and OpenCV preprocessing.</p>
+            </div>
+          </div>
+
+          <!-- MySQL & SQL -->
+          <div class="skill-card" data-category="tools" data-reveal>
+            <div class="skill-icon-wrap icon-sql">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+              </svg>
+            </div>
+            <div class="skill-meta">
+              <h4>MySQL & Relational SQL</h4>
+              <span class="skill-badge-verified">Database Management</span>
+              <p>Schema design, relational joins, complex subqueries, database normalization, indexing, and transactional integrity.</p>
+            </div>
+          </div>
+
+          <!-- Git & GitHub & Jupyter -->
+          <div class="skill-card" data-category="tools" data-reveal>
+            <div class="skill-icon-wrap icon-git">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="18" r="3" />
+                <circle cx="6" cy="6" r="3" />
+                <circle cx="6" cy="18" r="3" />
+                <line x1="6" y1="9" x2="6" y2="15" />
+                <path d="M18 15a9 9 0 0 0-9-9H6" />
+              </svg>
+            </div>
+            <div class="skill-meta">
+              <h4>Git, GitHub & Jupyter</h4>
+              <span class="skill-badge-verified">Version Control & Tooling</span>
+              <p>Branching workflows, pull requests, merge conflicts, repository management, and interactive Jupyter Notebooks.</p>
+            </div>
+          </div>
+
+          <!-- Linux & Red Hat Administration -->
+          <div class="skill-card" data-category="tools" data-reveal>
+            <div class="skill-icon-wrap icon-linux">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="4 17 10 11 4 5" />
+                <line x1="12" y1="19" x2="20" y2="19" />
+              </svg>
+            </div>
+            <div class="skill-meta">
+              <h4>Linux & System Administration</h4>
+              <span class="skill-badge-verified">Command Line & Red Hat RH124</span>
+              <p>Command-line administration, bash shell scripting, process management, file permissions, and system storage control.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section F: Documented Projects -->
+    <section class="section section-dark" id="projects">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Hands-On Implementations</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real software and research projects spanning autonomous agentic AI, workflow
+            automation, deep learning, data clustering, and systems programming.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Agentic AI (Multi-Agent Systems & Autonomous Workflows) -->
+          <article class="project-card glass-panel highlight-ai" data-reveal id="project-agentic-ai">
+            <div class="project-img-container">
+              <img src="assets/project_agentic_ai.jpg" alt="Agentic AI Autonomous Multi-Agent System Architecture &amp; Workflow Pipeline"
+                class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; padding: 1rem;">
+                  <button class="btn btn-sm btn-primary" onclick="openProjectModal('agentic_ai')">
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8" />
+                      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                      <line x1="11" y1="8" x2="11" y2="14" />
+                      <line x1="8" y1="11" x2="14" y2="11" />
+                    </svg>
+                    <span>Read Architecture Details</span>
+                  </button>
+                  <a href="https://github.com/arjunabalpande06/Agentic_AI" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-glass" style="color: #fff; background: rgba(255,255,255,0.15);" aria-label="View Agentic AI Repository on GitHub">
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+              <span class="project-tag-pill ai-agent-badge">
+                <span class="ai-pulse-dot" aria-hidden="true"></span>
+                <span>Autonomous AI</span>
+              </span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-heading-row">
+                <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+                  <h3 class="project-title" style="margin: 0;">Agentic AI</h3>
+                  <span class="featured-badge">Featured System</span>
+                </div>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--primary); background: rgba(0,242,254,0.08); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm); border: 1px solid rgba(0,242,254,0.25);">Multi-Agent</span>
+              </div>
+
+              <p class="project-desc">
+                Architected autonomous multi-agent systems and real-time research workflows. Integrates sequential multi-agent task planning (Planner, Tavily Search, Analyst, Writer) and asynchronous LLM fact-checking powered by the OpenAI Agents SDK and Groq's LLaMA 3.3 70B model.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                  </svg>
+                  <span><strong>Sequential Multi-Agent Pipeline:</strong> PlannerAgent &rarr; Tavily SearchAgent &rarr; AnalystAgent &rarr; WriterAgent (auto-exports to final_report.txt)</span>
+                </div>
+                <div class="highlight-item">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                  <span><strong>Autonomous Fact-Checker:</strong> Async evaluation loop with OpenAI Agents SDK &amp; Groq LLaMA 3.3 70B yielding verdicts and justifications</span>
+                </div>
+                <div class="highlight-item">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <span><strong>Grounded Web Retrieval:</strong> Real-time internet search integrated through LangChain Tool abstractions and Tavily API</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                  </svg>
+                  Multi-Agent Systems
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                  </svg>
+                  OpenAI Agents SDK
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                  Groq API (LLaMA 3.3)
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  Tavily AI Search
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                  </svg>
+                  LangChain Core
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5a1.5 1.5 0 1 1-1.5-1.5 1.5 1.5 0 0 1 1.5 1.5zm1.5-6.5a2.5 2.5 0 0 0-5 0 1 1 0 0 1-2 0 4.5 4.5 0 1 1 7.2 3.6.8.8 0 0 0-.2.4 1 1 0 0 1-2 0 2.7 2.7 0 0 1 .5-1.5 2.5 2.5 0 0 0 1.5-2.5z"/>
+                  </svg>
+                  Python 3.10+
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Asyncio
+                </span>
+              </div>
+
+              <div class="project-card-footer" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+                <button class="btn-link" onclick="openProjectModal('agentic_ai')">
+                  <span>Inspect Agent Architecture</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+                <a href="https://github.com/arjunabalpande06/Agentic_AI" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary project-github-btn" title="View Source on GitHub">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  <span>View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Student Deadline Reminder Automation -->
+          <article class="project-card glass-panel highlight-automation" data-reveal id="project-deadline-reminder">
+            <div class="project-img-container">
+              <img src="assets/project_deadline_reminder.jpg" alt="Student Deadline Reminder Automation Dashboard and Telegram Bot Preview"
+                class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; padding: 1rem;">
+                  <button class="btn btn-sm btn-primary" onclick="openProjectModal('deadline_reminder')">
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8" />
+                      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                      <line x1="11" y1="8" x2="11" y2="14" />
+                      <line x1="8" y1="11" x2="14" y2="11" />
+                    </svg>
+                    <span>Read System Details</span>
+                  </button>
+                  <a href="https://github.com/arjunabalpande06/Student_Deadline_Reminder_Automation" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-glass" style="color: #fff; background: rgba(255,255,255,0.15);" aria-label="View Student Deadline Reminder Automation Repository on GitHub">
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+              <span class="project-tag-pill automation-badge">
+                <span class="automation-pulse-dot" aria-hidden="true"></span>
+                <span>AI &amp; Automation</span>
+              </span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-heading-row">
+                <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+                  <h3 class="project-title" style="margin: 0;">Student Deadline Reminder Automation</h3>
+                  <span class="assistant-badge">AI Assistant</span>
+                </div>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: #c4b5fd; background: rgba(121,40,202,0.12); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm); border: 1px solid rgba(167,139,250,0.3);">Telegram Bot</span>
+              </div>
+
+              <p class="project-desc">
+                A student-focused automation system designed to help manage academic deadlines and dispatch automated reminders via Telegram. Integrates a Groq LLM-powered natural language task assistant (<code>openai/gpt-oss-120b</code>) with an interactive Gradio dashboard for assignment tracking.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                  <span><strong>AI Task Assistant:</strong> Parses natural language inputs into structured assignments and exact deadlines using Groq API</span>
+                </div>
+                <div class="highlight-item">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                  </svg>
+                  <span><strong>Automated Telegram Alerts:</strong> Dispatches advance notifications and urgent same-day alerts with deduplication</span>
+                </div>
+                <div class="highlight-item">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                  <span><strong>Gradio Web Dashboard:</strong> Interactive tabbed UI supporting assignment creation, status tracking, and deletion</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5a1.5 1.5 0 1 1-1.5-1.5 1.5 1.5 0 0 1 1.5 1.5zm1.5-6.5a2.5 2.5 0 0 0-5 0 1 1 0 0 1-2 0 4.5 4.5 0 1 1 7.2 3.6.8.8 0 0 0-.2.4 1 1 0 0 1-2 0 2.7 2.7 0 0 1 .5-1.5 2.5 2.5 0 0 0 1.5-2.5z"/>
+                  </svg>
+                  Python 3.10+
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                  Gradio UI
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                  Groq LLM (GPT-OSS-120B)
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  Telegram Bot API
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Asyncio
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                  </svg>
+                  JSON Persistence
+                </span>
+              </div>
+
+              <div class="project-card-footer" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+                <button class="btn-link" onclick="openProjectModal('deadline_reminder')">
+                  <span>Inspect System Architecture</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+                <a href="https://github.com/arjunabalpande06/Student_Deadline_Reminder_Automation" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary project-github-btn" title="View Source on GitHub">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  <span>View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Smart Grid Energy Forecasting Using ML -->
+          <article class="project-card glass-panel highlight-grid" data-reveal id="project-smart-grid">
+            <div class="project-img-container">
+              <img src="assets/project_smart_grid.jpg" alt="Smart Grid Energy Forecasting and Load Prediction Dashboard Preview"
+                class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; padding: 1rem;">
+                  <button class="btn btn-sm btn-primary" onclick="openProjectModal('smart_grid')">
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8" />
+                      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                      <line x1="11" y1="8" x2="11" y2="14" />
+                      <line x1="8" y1="11" x2="14" y2="11" />
+                    </svg>
+                    <span>Read Forecasting Details</span>
+                  </button>
+                  <a href="https://github.com/arjunabalpande06/Smart_Grid_Energy_Forecasting_Using_ML" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-glass" style="color: #fff; background: rgba(255,255,255,0.15);" aria-label="View Smart Grid Energy Forecasting Repository on GitHub">
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+              <span class="project-tag-pill smartgrid-badge">
+                <span class="grid-pulse-dot" aria-hidden="true"></span>
+                <span>Time-Series ML</span>
+              </span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-heading-row">
+                <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+                  <h3 class="project-title" style="margin: 0;">Smart Grid Energy Forecasting Using ML</h3>
+                  <span class="grid-feat-badge">Dual-Domain ML</span>
+                </div>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: #34d399; background: rgba(16,185,129,0.12); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm); border: 1px solid rgba(52,211,153,0.3);">National &amp; Micro-Grid</span>
+              </div>
+
+              <p class="project-desc">
+                A cross-platform machine learning and deep learning project forecasting electrical energy load across micro-scale (household consumption in France) and macro-scale (national grid demand in India). Benchmarks sequential LSTM neural networks against XGBoost, Random Forest, and SVR with interactive Gradio web interfaces.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                  <span><strong>Dual-Domain Benchmarking:</strong> Evaluates 2.07M+ 1-minute household power records (France) alongside multi-year hourly national grid demand (All-India)</span>
+                </div>
+                <div class="highlight-item">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                  </svg>
+                  <span><strong>Deep Sequential LSTM:</strong> 2-Layer LSTM with Dropout achieving <strong>R&sup2; = 0.9779</strong> and <strong>RMSE = 2,904 MW</strong> on 24-step national sequence windows</span>
+                </div>
+                <div class="highlight-item">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 20V10"></path>
+                    <path d="M12 20V4"></path>
+                    <path d="M6 20v-6"></path>
+                  </svg>
+                  <span><strong>Gradient Boosted Lag Regressors:</strong> XGBoost (<strong>R&sup2; = 0.9418</strong>, <strong>RMSE = 0.216 kW</strong>) &amp; Random Forest utilizing 5 autoregressive lag windows</span>
+                </div>
+                <div class="highlight-item">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                  <span><strong>10 Local Gradio Web Apps:</strong> Interactive browser UIs supporting instant load forecasting with date-time and lag feature sliders</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5a1.5 1.5 0 1 1-1.5-1.5 1.5 1.5 0 0 1 1.5 1.5zm1.5-6.5a2.5 2.5 0 0 0-5 0 1 1 0 0 1-2 0 4.5 4.5 0 1 1 7.2 3.6.8.8 0 0 0-.2.4 1 1 0 0 1-2 0 2.7 2.7 0 0 1 .5-1.5 2.5 2.5 0 0 0 1.5-2.5z"/>
+                  </svg>
+                  Python 3.10+
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                  </svg>
+                  TensorFlow &amp; Keras
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  LSTM Networks
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                  XGBoost Regressor
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  </svg>
+                  Scikit-Learn (RFR &amp; SVR)
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                  Gradio Web UI
+                </span>
+                <span class="tech-tag tech-tag-icon">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                  </svg>
+                  Time-Series Lags
+                </span>
+              </div>
+
+              <div class="project-card-footer" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+                <button class="btn-link" onclick="openProjectModal('smart_grid')">
+                  <span>Inspect Forecasting Architecture</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+                <a href="https://github.com/arjunabalpande06/Smart_Grid_Energy_Forecasting_Using_ML" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary project-github-btn" title="View Source on GitHub">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  <span>View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: R-CNN Image Detection -->
+          <article class="project-card glass-panel" data-reveal>
+            <div class="project-img-container">
+              <img src="assets/project_rcnn.jpg" alt="R-CNN Image Detection Architecture and Output Preview"
+                class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary" onclick="openProjectModal('rcnn')">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  <span>Read Technical Details</span>
+                </button>
+              </div>
+              <span class="project-tag-pill">Research & AI</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-heading-row">
+                <h3 class="project-title">Image Detection using R-CNN</h3>
+              </div>
+              <p class="project-desc">
+                Conducted deep learning research on object detection utilizing Region-Based Convolutional Neural
+                Networks (R-CNN). Engineered a complete pipeline for selective search region proposals, feature
+                extraction, and multi-object classification.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Deep Learning</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn-link" onclick="openProjectModal('rcnn')">
+                  <span>View Full Architecture</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Customer Segmentation (Patent Published) -->
+          <article class="project-card glass-panel highlight-patent" data-reveal>
+            <div class="project-img-container">
+              <img src="assets/project_clustering.jpg" alt="Customer Segmentation K-Means Clustering Dashboard"
+                class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary" onclick="openProjectModal('clustering')">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    <line x1="11" y1="8" x2="11" y2="14" />
+                    <line x1="8" y1="11" x2="14" y2="11" />
+                  </svg>
+                  <span>Read Patent Details</span>
+                </button>
+              </div>
+              <span class="project-tag-pill patent-badge">Patent Published</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-heading-row">
+                <h3 class="project-title">Customer Segmentation using Python</h3>
+              </div>
+              <p class="project-desc">
+                Conducted research-based customer segmentation using K-Means clustering on behavioral purchasing
+                datasets. Successfully grouped high-value and niche consumer archetypes for targeted business
+                strategies; resulted in a published patent.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">K-Means</span>
+              </div>
+
+              <div class="project-card-footer" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                <button class="btn-link" onclick="openProjectModal('clustering')">
+                  <span>View Segmentation Analysis</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+                <a href="assets/PT_Publication_Copy_202521127272_arjun.pdf" download="PT_Publication_Copy_202521127272_arjun.pdf" class="btn btn-sm btn-outline" style="font-size: 0.78rem; padding: 0.25rem 0.6rem;">Patent PDF</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Basic Bank Management System -->
+          <article class="project-card glass-panel" data-reveal>
+            <div class="project-code-preview">
+              <div class="code-decor">
+                <span class="circle-btn c-red"></span>
+                <span class="circle-btn c-yellow"></span>
+                <span class="circle-btn c-green"></span>
+                <span class="code-title">bank_system.py</span>
+              </div>
+              <pre class="code-snippet"><code>class BankAccount:
+    def __init__(self, acc_no, holder, balance=0.0):
+        self.acc_no = acc_no
+        self.holder = holder
+        self.balance = balance
+        
+    def deposit(self, amount):
+        if amount > 0:
+            self.balance += amount
+            return True</code></pre>
+            </div>
+
+            <div class="project-body">
+              <div class="project-heading-row">
+                <h3 class="project-title">Basic Bank Management System</h3>
+              </div>
+              <p class="project-desc">
+                A Python-based banking application supporting account creation, balance inquiry, deposit/withdrawal
+                validation, transaction histories, and file-based data persistence.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OOP</span>
+                <span class="tech-tag">File Handling</span>
+                <span class="tech-tag">Data Validation</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn-link" onclick="openProjectModal('bank')">
+                  <span>Inspect Logic & Architecture</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7: Classic Tic-Tac-Toe Game in C -->
+          <article class="project-card glass-panel" data-reveal>
+            <div class="project-code-preview">
+              <div class="code-decor">
+                <span class="circle-btn c-red"></span>
+                <span class="circle-btn c-yellow"></span>
+                <span class="circle-btn c-green"></span>
+                <span class="code-title">tictactoe.c</span>
+              </div>
+              <pre class="code-snippet"><code>char board[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+int checkWin() {
+    for (int i = 0; i &lt; 3; i++) {
+        if (board[i][0] == board[i][1] && board[i][1] == board[i][2])
+            return 1;
+    }
+    return 0;
+}</code></pre>
+            </div>
+
+            <div class="project-body">
+              <div class="project-heading-row">
+                <h3 class="project-title">Classic Tic-Tac-Toe Game</h3>
+              </div>
+              <p class="project-desc">
+                An interactive console game programmed in C featuring procedural game loop logic, player turn toggling,
+                dynamic 3x3 matrix board rendering, and win/draw condition evaluations.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">C Language</span>
+                <span class="tech-tag">2D Arrays</span>
+                <span class="tech-tag">Procedural Logic</span>
+                <span class="tech-tag">CLI</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn-link" onclick="openProjectModal('tictactoe')">
+                  <span>View C Source Structure</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Industry Internships (Work Experience) -->
+    <section class="section" id="internships">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Work Experience</span>
+          <h2 class="section-title">Industry Internships</h2>
+          <p class="section-subtitle">Real-world software engineering, full-stack web development, and Python application development experience.</p>
+        </div>
+
+        <div class="internship-showcase glass-panel" data-reveal>
+          <!-- Company & Role Banner -->
+          <div class="intern-header-card">
+            <div class="intern-brand-col">
+              <div class="intern-logo-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="intern-titles">
+                <div class="intern-company-row">
+                  <h3 class="intern-company">Syteos Labs LLP</h3>
+                  <a href="https://www.syteoslabs.com" target="_blank" rel="noopener noreferrer" class="company-site-link" title="Visit Company Website">
+                    <span>syteoslabs.com</span>
+                    <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+                <h4 class="intern-role">Full Stack Web Development Intern</h4>
+                <p class="intern-location">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Office No. 201, Xion Mall, Hinjawadi, Pune, Maharashtra 411057
+                </p>
+              </div>
+            </div>
+
+            <div class="intern-badge-col">
+              <span class="badge-status-completed">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Completed & Verified
+              </span>
+              <span class="intern-duration">
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                24 May 2026 – 24 June 2026 (Summer 2026)
+              </span>
+              <span class="intern-mode">Remote Professional Internship</span>
+            </div>
+          </div>
+
+          <!-- Highlight Stats Row -->
+          <div class="intern-stats-grid">
+            <div class="intern-stat-item">
+              <span class="stat-label">Intern ID</span>
+              <span class="stat-value font-mono">SYT2026-001</span>
+            </div>
+            <div class="intern-stat-item">
+              <span class="stat-label">Executive Mentorship</span>
+              <span class="stat-value">Mr. Vaibhav Ugile, CTO</span>
+            </div>
+            <div class="intern-stat-item">
+              <span class="stat-label">Issuing Authority</span>
+              <span class="stat-value">Shreyash Kapse, Director</span>
+            </div>
+            <div class="intern-stat-item">
+              <span class="stat-label">Domain Focus</span>
+              <span class="stat-value">Full Stack Web Engineering</span>
+            </div>
+          </div>
+
+          <!-- Description and Key Deliverables -->
+          <div class="intern-content-grid">
+            <div class="intern-deliverables">
+              <h4 class="intern-subhead">Key Responsibilities & Contributions</h4>
+              <ul class="intern-bullet-list">
+                <li>
+                  <div class="bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <div>
+                    <strong>Responsive UI/UX Engineering:</strong> Architected and developed responsive, accessible, and user-centric web interfaces using modern frontend technologies and component-driven styling.
+                  </div>
+                </li>
+                <li>
+                  <div class="bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <div>
+                    <strong>Backend & Database Integration:</strong> Implemented backend service endpoints, data schemas, and database connectivity to enable seamless, secure data persistence and API flow.
+                  </div>
+                </li>
+                <li>
+                  <div class="bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <div>
+                    <strong>Scalable Code & Best Practices:</strong> Authored maintainable, modular, and optimized code adhering to industry-standard software engineering practices and test-driven quality principles.
+                  </div>
+                </li>
+                <li>
+                  <div class="bullet-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <div>
+                    <strong>Agile Remote Collaboration:</strong> Collaborated effectively with cross-functional teams (UI/UX designers, QA, and CTO), delivering sprint milestones on schedule in a remote setting.
+                  </div>
+                </li>
+              </ul>
+
+              <div class="intern-tags-wrap">
+                <span class="tech-tag">Full Stack Web</span>
+                <span class="tech-tag">JavaScript / HTML5 / CSS3</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">Database Integration</span>
+                <span class="tech-tag">UI/UX Design</span>
+                <span class="tech-tag">Git & Agile SDLC</span>
+              </div>
+            </div>
+
+            <!-- Company Profile & Core Business Focus -->
+            <div class="intern-company-card">
+              <h4 class="intern-subhead">About Syteos Labs LLP</h4>
+              <p class="company-about-text">
+                Syteos Labs LLP is a Pune-based IT software and solutions firm specializing in custom enterprise software, mobile & web applications, business automation, and digital transformation for modern businesses.
+              </p>
+              
+              <div class="company-services-box">
+                <h5 class="services-title">Services & Technical Focus Areas</h5>
+                <div class="services-tags">
+                  <span>Custom Software Development</span>
+                  <span>Full Stack Web Development</span>
+                  <span>Mobile Applications (iOS & Android)</span>
+                  <span>Database Architecture</span>
+                  <span>Cloud & Digital Transformation</span>
+                  <span>UI/UX Interface Design</span>
+                </div>
+              </div>
+
+              <div class="mentorship-quote-box">
+                <div class="quote-icon">“</div>
+                <p class="quote-text">
+                  "Arjun Balpande demonstrated dedication, sincerity, a strong willingness to learn, and the ability to work effectively in a remote professional environment, completing all assigned tasks responsibly."
+                </p>
+                <div class="quote-author">
+                  — <strong>Mr. Vaibhav Ugile</strong>, Chief Technical Officer (CTO) & <strong>Shreyash Kapse</strong>, Director
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Official Verification Documents Grid -->
+          <div class="intern-docs-section">
+            <div class="intern-docs-header">
+              <h4 class="intern-subhead">Official Documentation & Credentials</h4>
+              <span class="docs-count">3 Verified Documents</span>
+            </div>
+
+            <div class="intern-docs-grid">
+              <!-- Doc 1: Experience Certificate -->
+              <div class="intern-doc-card">
+                <div class="intern-doc-thumb-wrap" onclick="openInternshipDoc('cert')">
+                  <img src="assets/internship/experience_certificate.png" alt="Syteos Labs Experience Certificate" loading="lazy">
+                  <div class="intern-doc-overlay">
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    <span>View Certificate</span>
+                  </div>
+                </div>
+                <div class="intern-doc-info">
+                  <h5 class="intern-doc-title">Experience Certificate</h5>
+                  <p class="intern-doc-desc">Official completion certificate signed by Director Shreyash Kapse certifying 4-week full-stack web development internship.</p>
+                  <div class="intern-doc-actions">
+                    <button class="btn btn-sm btn-outline" onclick="openInternshipDoc('cert')">Preview</button>
+                    <a href="assets/internship/experience_certificate.pdf" download="Syteos_Labs_Experience_Certificate_Arjun_Balpande.pdf" class="btn btn-sm btn-primary">PDF</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Doc 2: Offer Letter -->
+              <div class="intern-doc-card">
+                <div class="intern-doc-thumb-wrap" onclick="openInternshipDoc('offer')">
+                  <img src="assets/internship/internship_offer_letter.png" alt="Syteos Labs Offer Letter" loading="lazy">
+                  <div class="intern-doc-overlay">
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    <span>View Offer Letter</span>
+                  </div>
+                </div>
+                <div class="intern-doc-info">
+                  <h5 class="intern-doc-title">Internship Offer Letter</h5>
+                  <p class="intern-doc-desc">Formal letter of appointment from Syteos Labs LLP outlining role scope, learning outcomes, and technical domain (ID: SYT2026-001).</p>
+                  <div class="intern-doc-actions">
+                    <button class="btn btn-sm btn-outline" onclick="openInternshipDoc('offer')">Preview</button>
+                    <a href="assets/internship/internship_offer_letter.pdf" download="Syteos_Labs_Offer_Letter_Arjun_Balpande.pdf" class="btn btn-sm btn-primary">PDF</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Doc 3: Company Profile & Mentorship Record -->
+              <div class="intern-doc-card">
+                <div class="intern-doc-thumb-wrap" onclick="openInternshipDoc('company')">
+                  <img src="assets/internship/company_and_mentorship_detail.png" alt="Syteos Labs Company Profile & Mentorship" loading="lazy">
+                  <div class="intern-doc-overlay">
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    <span>View Company Details</span>
+                  </div>
+                </div>
+                <div class="intern-doc-info">
+                  <h5 class="intern-doc-title">Company Profile & Mentorship</h5>
+                  <p class="intern-doc-desc">Detailed company background, service portfolio, organizational structure, and executive mentorship statement by CTO Vaibhav Ugile.</p>
+                  <div class="intern-doc-actions">
+                    <button class="btn btn-sm btn-outline" onclick="openInternshipDoc('company')">Preview</button>
+                    <a href="assets/internship/company_and_mentorship_detail.pdf" download="Syteos_Labs_Company_Detail_Arjun_Balpande.pdf" class="btn btn-sm btn-primary">PDF</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Internship 2: KodBud (Python Developer Intern) -->
+        <div class="internship-showcase glass-panel kodbud-showcase" data-reveal id="internship-kodbud">
+          <!-- Company & Role Banner -->
+          <div class="intern-header-card">
+            <div class="intern-brand-col">
+              <div class="intern-logo-badge kodbud-logo-badge" title="KodBud">
+                <span style="font-family: var(--font-mono); font-weight: 800; font-size: 1.25rem; letter-spacing: -0.5px;">KB</span>
+              </div>
+              <div class="intern-titles">
+                <div class="intern-company-row">
+                  <h3 class="intern-company">KodBud</h3>
+                  <span class="company-site-link" style="color: #c4b5fd; background: rgba(121,40,202,0.12); border-color: rgba(167,139,250,0.3);">
+                    <span>Virtual Internship Platform</span>
+                  </span>
+                </div>
+                <h4 class="intern-role" style="color: #c4b5fd;">
+                  Python Developer Intern
+                  <span class="placeholder-badge" title="Documented via 4 Python project deliverables in Internship_KodBud.zip">[Documented Deliverables]</span>
+                </h4>
+                <p class="intern-location">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                  Remote Software Engineering Internship
+                </p>
+              </div>
+            </div>
+
+            <div class="kodbud-badge-col">
+              <span class="badge-status-delivered">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                4 Tasks Completed &amp; Verified
+              </span>
+              <span class="intern-duration">
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                March 2026 – April 2026 <span class="placeholder-badge" title="Documented file timestamp period; edit if official dates differ">[Documented Dates]</span>
+              </span>
+              <span class="intern-mode">Remote Developer Program</span>
+            </div>
+          </div>
+
+          <!-- Highlight Stats Row -->
+          <div class="intern-stats-grid">
+            <div class="intern-stat-item">
+              <span class="stat-label">Internship Track</span>
+              <span class="stat-value font-mono">Python Development</span>
+            </div>
+            <div class="intern-stat-item">
+              <span class="stat-label">Completed Deliverables</span>
+              <span class="stat-value font-mono" style="color: #c4b5fd;">4 Project Modules</span>
+            </div>
+            <div class="intern-stat-item">
+              <span class="stat-label">Source Evidence</span>
+              <span class="stat-value">Internship_KodBud.zip</span>
+            </div>
+            <div class="intern-stat-item">
+              <span class="stat-label">Primary Technology</span>
+              <span class="stat-value">Python 3 (CLI &amp; Logic)</span>
+            </div>
+          </div>
+
+          <!-- Description and Key Deliverables -->
+          <div class="intern-content-grid">
+            <div class="intern-deliverables">
+              <h4 class="intern-subhead">Tasks Completed &amp; Technical Responsibilities</h4>
+              <ul class="intern-bullet-list">
+                <li>
+                  <div class="bullet-icon" style="color: #c4b5fd; border-color: rgba(167,139,250,0.3); background: rgba(121,40,202,0.12);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <div>
+                    <strong>Contact Management System (<code>Contact_Book.py</code>):</strong> Architected an in-memory CRUD terminal application supporting contact addition, full directory viewing, case-insensitive keyword searching, and record deletion using Python lists and dictionaries.
+                  </div>
+                </li>
+                <li>
+                  <div class="bullet-icon" style="color: #c4b5fd; border-color: rgba(167,139,250,0.3); background: rgba(121,40,202,0.12);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <div>
+                    <strong>Password Security Strength Validator (<code>Password Checker.py</code>):</strong> Programmed an automated rule validator checking multi-factor criteria: minimum 8-character length, uppercase letters, numeric digits, and special character presence (<code>!@#$%^&amp;*()_+-=</code>).
+                  </div>
+                </li>
+                <li>
+                  <div class="bullet-icon" style="color: #c4b5fd; border-color: rgba(167,139,250,0.3); background: rgba(121,40,202,0.12);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <div>
+                    <strong>CLI Arithmetic Calculator (<code>Calcy.py</code>):</strong> Built an interactive multi-operation mathematical engine handling floating-point arithmetic (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>) with safe division-by-zero exception branching and input sanitation.
+                  </div>
+                </li>
+                <li>
+                  <div class="bullet-icon" style="color: #c4b5fd; border-color: rgba(167,139,250,0.3); background: rgba(121,40,202,0.12);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <div>
+                    <strong>Random Number Guessing Game (<code>Number_GG.py</code>):</strong> Implemented an interactive terminal game utilizing Python's <code>random</code> module, loop control structures, attempt counters, and dynamic hint evaluation (<code>Too High</code> / <code>Too Low</code>).
+                  </div>
+                </li>
+              </ul>
+
+              <div class="intern-tags-wrap">
+                <span class="tech-tag" style="border-color: rgba(167,139,250,0.3); color: #c4b5fd;">Python 3</span>
+                <span class="tech-tag">Data Structures (Lists &amp; Dicts)</span>
+                <span class="tech-tag">CLI Application Development</span>
+                <span class="tech-tag">CRUD Operations</span>
+                <span class="tech-tag">Input Validation</span>
+                <span class="tech-tag">Security &amp; Password Rules</span>
+                <span class="tech-tag">Algorithm Logic</span>
+              </div>
+            </div>
+
+            <!-- Learning Outcomes & Organization Background -->
+            <div class="intern-company-card">
+              <h4 class="intern-subhead">Key Learnings &amp; Practical Outcomes</h4>
+              <p class="company-about-text">
+                The KodBud internship emphasized structured coding standards, modular function design, and hands-on implementation of core software utilities in Python.
+              </p>
+              
+              <div class="company-services-box" style="border-color: rgba(167,139,250,0.25);">
+                <h5 class="services-title" style="color: #c4b5fd;">Competencies &amp; Technical Skills Developed</h5>
+                <div class="services-tags">
+                  <span>Stateful In-Memory Storage</span>
+                  <span>Interactive Terminal Loops</span>
+                  <span>Validation &amp; Error Handling</span>
+                  <span>String &amp; Character Parsing</span>
+                  <span>Procedural Modular Functions</span>
+                  <span>Clean Code Architecture</span>
+                </div>
+              </div>
+
+              <div class="mentorship-quote-box" style="border-left-color: #a78bfa; background: rgba(121,40,202,0.06);">
+                <div class="quote-icon" style="color: #a78bfa;">“</div>
+                <p class="quote-text">
+                  Delivered 4 functional software modules with zero dependencies, demonstrating solid command of Python fundamental paradigms, memory collections, and terminal user interaction patterns.
+                </p>
+                <div class="quote-author" style="color: #c4b5fd;">
+                  — <strong>Verified Project Artifacts</strong> from <code>Internship_KodBud.zip</code>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Documentation & Verified Artifacts Grid -->
+          <div class="intern-docs-section">
+            <div class="intern-docs-header">
+              <h4 class="intern-subhead">Internship Artifacts &amp; Verification</h4>
+              <span class="docs-count" style="color: #c4b5fd; background: rgba(121,40,202,0.12); border-color: rgba(167,139,250,0.3);">
+                2 Verified Evidence Cards
+              </span>
+            </div>
+
+            <div class="intern-docs-grid" style="grid-template-columns: repeat(2, 1fr);">
+              <!-- Evidence 1: Code Deliverables -->
+              <div class="intern-doc-card">
+                <div class="intern-doc-thumb-wrap" onclick="openInternshipDoc('kodbud_code')">
+                  <div style="height: 160px; background: #060910; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.8" style="width: 48px; height: 48px; margin-bottom: 0.5rem;">
+                      <polyline points="16 18 22 12 16 6"></polyline>
+                      <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span style="font-family: var(--font-mono); font-size: 0.85rem; color: #c4b5fd;">4 Python Source Modules</span>
+                  </div>
+                  <div class="intern-doc-overlay">
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    <span>Inspect Code Artifacts</span>
+                  </div>
+                </div>
+                <div class="intern-doc-info">
+                  <h5 class="intern-doc-title">Internship Code Deliverables</h5>
+                  <p class="intern-doc-desc">Verified Python scripts submitted for the internship: Contact Book, Calculator, Password Checker, and Guessing Game.</p>
+                  <div class="intern-doc-actions">
+                    <button class="btn btn-sm btn-outline" onclick="openInternshipDoc('kodbud_code')">Preview Code</button>
+                    <a href="assets/internship/kodbud/Internship_KodBud/Contact_Book.py" download="Contact_Book.py" class="btn btn-sm btn-primary">Script</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Evidence 2: Certificate Placeholder -->
+              <div class="intern-doc-card">
+                <div class="intern-doc-thumb-wrap" onclick="openInternshipDoc('kodbud_cert')">
+                  <div style="height: 160px; background: rgba(245, 158, 11, 0.04); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle); border: 1px dashed rgba(245, 158, 11, 0.25);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="1.8" style="width: 48px; height: 48px; margin-bottom: 0.5rem;">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span style="font-family: var(--font-mono); font-size: 0.85rem; color: #fbbf24;">Certificate Document</span>
+                    <span class="placeholder-badge" style="margin-top: 0.25rem;">[Upload Pending]</span>
+                  </div>
+                  <div class="intern-doc-overlay">
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>View Details / Instructions</span>
+                  </div>
+                </div>
+                <div class="intern-doc-info">
+                  <h5 class="intern-doc-title">
+                    Completion Certificate
+                    <span class="placeholder-badge">[Pending]</span>
+                  </h5>
+                  <p class="intern-doc-desc">Official completion certificate from KodBud. Place your certificate at <code>assets/internship/kodbud/kodbud_certificate.pdf</code> to activate direct download.</p>
+                  <div class="intern-doc-actions">
+                    <button class="btn btn-sm btn-outline" onclick="openInternshipDoc('kodbud_cert')">Instructions</button>
+                    <button class="btn btn-sm btn-outline" style="opacity: 0.6; cursor: not-allowed;" title="Upload certificate to assets/internship/kodbud/kodbud_certificate.pdf to enable">PDF Pending</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section G: Achievements & Honors -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Recognitions</span>
+          <h2 class="section-title">Patents & Achievements</h2>
+          <p class="section-subtitle">Formal intellectual property publications and scholastic recognitions verified
+            from official records.</p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Patent Card -->
+          <div class="achievement-card patent-spotlight" data-reveal>
+            <div class="achievement-header">
+              <div class="achieve-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <div>
+                <span class="achieve-type">Official Intellectual Property &bull; Patent Office of India</span>
+                <span style="font-size: 0.78rem; color: #fbbf24; font-family: var(--font-mono); font-weight: 700; display: block; margin-top: 2px;">App No. 202521127272 A</span>
+              </div>
+            </div>
+            <h3 class="achieve-title">A Computer-Implemented Customer Segmentation System</h3>
+            <p class="achieve-desc">
+              Algorithmic research on customer behavioral segmentation utilizing K-Means unsupervised clustering, FastAPI service pipelines, and Streamlit analytics. Formally published in the <strong>Official Patent Office Journal No. 01/2026 (02/01/2026, Page 480)</strong>.
+            </p>
+
+            <!-- Patent Document Preview Box -->
+            <div class="patent-doc-preview">
+              <div class="patent-thumb-box" onclick="openPatentModal()">
+                <img src="assets/patent_publication_journal.png" alt="Official Patent Journal Entry" loading="lazy">
+                <div class="patent-thumb-overlay">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <span>Preview</span>
+                </div>
+              </div>
+              <div class="patent-doc-details">
+                <span class="patent-reg-num">Patent Application: 202521127272 A</span>
+                <h4 class="patent-doc-title">Official Patent Journal Publication Copy</h4>
+                <p class="patent-doc-meta">
+                  <strong>Applicant:</strong> Symbiosis International (Deemed University)<br>
+                  <strong>Inventors:</strong> Prof. Rajeshwar L. Bhalla, Parth Kandikurwar, Krisha Kahate, <strong>Arjun Balpande</strong>
+                </p>
+                <div class="patent-actions-row">
+                  <button class="btn btn-sm btn-outline" onclick="openPatentModal()">View Journal Copy</button>
+                  <a href="assets/PT_Publication_Copy_202521127272_arjun.pdf" download="PT_Publication_Copy_202521127272_arjun.pdf" class="btn btn-sm btn-primary">Download PDF</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="achieve-meta" style="margin-top: 1.25rem;">
+              <span class="meta-tag">Status: <strong>Patent Published (02/01/2026)</strong></span>
+              <span class="meta-tag">Class: <strong>G06Q 30/02, G06F 16/906</strong></span>
+              <span class="meta-tag">Journal: <strong>Issue No. 01/2026, Page 480</strong></span>
+            </div>
+          </div>
+
+          <!-- Academic Honors Card -->
+          <div class="achievement-card" data-reveal>
+            <div class="achievement-header">
+              <div class="achieve-badge-icon icon-academic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                  <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                </svg>
+              </div>
+              <span class="achieve-type">Academic Standing</span>
+            </div>
+            <h3 class="achieve-title">Computer Science & Engineering Undergraduate</h3>
+            <p class="achieve-desc">
+              Admitted to the Bachelor of Technology in Computer Science program at Symbiosis Institute of Technology
+              (SIT), focusing on data structures, algorithmic design, and enterprise computing.
+            </p>
+            <div class="achieve-meta">
+              <span class="meta-tag">Institution: <strong>SIT Nagpur</strong></span>
+              <span class="meta-tag">Batch: <strong>2024 &ndash; 2028</strong></span>
+            </div>
+          </div>
+
+          <!-- Co-Scholastic Distinction Card -->
+          <div class="achievement-card" data-reveal>
+            <div class="achievement-header">
+              <div class="achieve-badge-icon icon-scholastic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 14 14" />
+                </svg>
+              </div>
+              <span class="achieve-type">Holistic Performance</span>
+            </div>
+            <h3 class="achieve-title">Triple A1 Grade in CBSE Co-Scholastics</h3>
+            <p class="achieve-desc">
+              Awarded the highest attainable Grade A1 across all three central evaluation areas: Work Experience, Health
+              & Physical Education, and General Studies in Senior Secondary CBSE evaluations.
+            </p>
+            <div class="achieve-meta">
+              <span class="meta-tag">Board: <strong>CBSE India</strong></span>
+              <span class="meta-tag">Grades: <strong>A1 / A1 / A1</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section H: Certificates -->
+    <section class="section section-dark" id="certifications">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Formal Credentials</span>
+          <h2 class="section-title">Technical Certifications</h2>
+          <p class="section-subtitle">Verified industry training credentials, professional coursework, and digital badges.</p>
+        </div>
+
+        <!-- All 7 Certifications with Images -->
+        <div class="cert-grid" id="certGrid">
+          <!-- Cert 1: Red Hat RH124 -->
+          <div class="cert-card glass-panel" data-reveal>
+            <div class="cert-img-wrap" onclick="openCertModal('rh124')">
+              <img src="assets/certificates/rh124_sysadmin.png" alt="Red Hat System Administration I (RH124)" loading="lazy" />
+              <div class="cert-img-overlay">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Click to View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-meta-row">
+                <span class="cert-org-badge badge-redhat">Red Hat Training</span>
+                <span class="cert-date">Mar 2026 &bull; 40 Hrs</span>
+              </div>
+              <h3 class="cert-title">Red Hat System Administration I (RH124)</h3>
+              <p class="cert-desc">
+                Official Red Hat enterprise administration credential validating Linux command-line mastery, user management, file systems, permissions, and security controls.
+              </p>
+              <div class="cert-footer">
+                <a href="https://www.credly.com/badges/d1c9e770-ffd1-4604-b234-18d3238c214a" target="_blank" rel="noopener noreferrer" class="cert-status verified" title="Verify on Credly">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg> Credly Verified
+                </a>
+                <div class="cert-card-actions">
+                  <button class="btn btn-sm btn-outline" onclick="openCertModal('rh124')">View</button>
+                  <a href="assets/certificates/rh124_sysadmin.pdf" download="RedHat_RH124_Arjun_Balpande.pdf" class="btn btn-sm btn-primary">PDF</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2: Red Hat DO457 (Ansible Network Automation) -->
+          <div class="cert-card glass-panel" data-reveal>
+            <div class="cert-img-wrap" onclick="openCertModal('do457')">
+              <img src="assets/certificates/redhat_ansible_do457.png" alt="Network Automation with Red Hat Ansible (DO457)" loading="lazy" />
+              <div class="cert-img-overlay">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Click to View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-meta-row">
+                <span class="cert-org-badge badge-redhat">Red Hat Training</span>
+                <span class="cert-date">Sep 2026 &bull; 32 Hrs</span>
+              </div>
+              <h3 class="cert-title">Network Automation with Red Hat Ansible (DO457)</h3>
+              <p class="cert-desc">
+                Enterprise network automation certification covering Ansible playbooks, network hardware modules, configuration drift management, and automated provisioning.
+              </p>
+              <div class="cert-footer">
+                <a href="https://www.credly.com/badges/d403e8bc-0a89-4bac-bfe2-118615e1fe51" target="_blank" rel="noopener noreferrer" class="cert-status verified" title="Verify on Credly">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg> Credly Verified
+                </a>
+                <div class="cert-card-actions">
+                  <button class="btn btn-sm btn-outline" onclick="openCertModal('do457')">View</button>
+                  <a href="assets/certificates/redhat_ansible_do457.pdf" download="RedHat_DO457_Arjun_Balpande.pdf" class="btn btn-sm btn-primary">PDF</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3: Red Hat AD141 (Python) -->
+          <div class="cert-card glass-panel" data-reveal>
+            <div class="cert-img-wrap" onclick="openCertModal('ad141')">
+              <img src="assets/certificates/redhat_python_ad141.png" alt="Introduction to Python Programming (AD141)" loading="lazy" />
+              <div class="cert-img-overlay">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Click to View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-meta-row">
+                <span class="cert-org-badge badge-redhat">Red Hat Training</span>
+                <span class="cert-date">Feb 2025</span>
+              </div>
+              <h3 class="cert-title">Introduction to Python Programming (AD141)</h3>
+              <p class="cert-desc">
+                Specialized enterprise Python training curriculum covering modular scripting, data structures, exception handling, and OS automation in enterprise Linux environments.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-status verified">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg> SIT Verified
+                </span>
+                <div class="cert-card-actions">
+                  <button class="btn btn-sm btn-outline" onclick="openCertModal('ad141')">View</button>
+                  <a href="assets/certificates/redhat_python_ad141.pdf" download="RedHat_AD141_Arjun_Balpande.pdf" class="btn btn-sm btn-primary">PDF</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4: Infosys Springboard DSA -->
+          <div class="cert-card glass-panel" data-reveal>
+            <div class="cert-img-wrap" onclick="openCertModal('infosys_dsa')">
+              <img src="assets/certificates/infosys_dsa_part1.png" alt="Data Structures & Algorithms using Python" loading="lazy" />
+              <div class="cert-img-overlay">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Click to View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-meta-row">
+                <span class="cert-org-badge badge-infosys">Infosys Springboard</span>
+                <span class="cert-date">Oct 2025</span>
+              </div>
+              <h3 class="cert-title">Data Structures & Algorithms using Python - Part 1</h3>
+              <p class="cert-desc">
+                Comprehensive coursework covering linear and non-linear data structures (arrays, linked lists, stacks, queues, trees), recursion, sorting, and asymptotic Big-O analysis.
+              </p>
+              <div class="cert-footer">
+                <a href="https://verify.onwingspan.com" target="_blank" rel="noopener noreferrer" class="cert-status verified" title="Verify on Wingspan">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg> Wingspan Verified
+                </a>
+                <div class="cert-card-actions">
+                  <button class="btn btn-sm btn-outline" onclick="openCertModal('infosys_dsa')">View</button>
+                  <a href="assets/certificates/infosys_dsa_part1.pdf" download="Infosys_DSA_Arjun_Balpande.pdf" class="btn btn-sm btn-primary">PDF</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 5: Udemy Agentic AI -->
+          <div class="cert-card glass-panel" data-reveal>
+            <div class="cert-img-wrap" onclick="openCertModal('agentic_ai')">
+              <img src="assets/certificates/udemy_agentic_ai.png" alt="Mastering Agentic AI" loading="lazy" />
+              <div class="cert-img-overlay">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Click to View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-meta-row">
+                <span class="cert-org-badge badge-udemy">Udemy</span>
+                <span class="cert-date">Aug 2026 &bull; 38 Hrs</span>
+              </div>
+              <h3 class="cert-title">Mastering Agentic AI: From Prompt to Protocols to Production</h3>
+              <p class="cert-desc">
+                Advanced certification on autonomous LLM agent systems, tool integration protocols (MCP), multi-agent workflows, vector memory pipelines, and production deployments.
+              </p>
+              <div class="cert-footer">
+                <a href="https://ude.my/UC-fc9d50fb-31ce-4c76-8da7-6ab5a86e0e2c" target="_blank" rel="noopener noreferrer" class="cert-status verified" title="Verify on Udemy">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg> Udemy Verified
+                </a>
+                <div class="cert-card-actions">
+                  <button class="btn btn-sm btn-outline" onclick="openCertModal('agentic_ai')">View</button>
+                  <a href="assets/certificates/udemy_agentic_ai.pdf" download="Udemy_Agentic_AI_Arjun.pdf" class="btn btn-sm btn-primary">PDF</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 6: IBM SkillsBuild RAG -->
+          <div class="cert-card glass-panel" data-reveal>
+            <div class="cert-img-wrap contain-img" onclick="openCertModal('ibm_rag')">
+              <img src="assets/certificates/ibm_rag.jpeg" alt="IBM SkillsBuild Introduction to RAG" loading="lazy" />
+              <div class="cert-img-overlay">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Click to View Badge</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-meta-row">
+                <span class="cert-org-badge badge-ibm">IBM SkillsBuild</span>
+                <span class="cert-date">Credential</span>
+              </div>
+              <h3 class="cert-title">Introduction to Retrieval-Augmented Generation (RAG)</h3>
+              <p class="cert-desc">
+                Digital credential validating foundational RAG architecture, semantic vector search, external knowledge retrieval, and grounded response synthesis with foundation LLMs.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-status verified">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg> IBM Verified
+                </span>
+                <div class="cert-card-actions">
+                  <button class="btn btn-sm btn-outline" onclick="openCertModal('ibm_rag')">View</button>
+                  <a href="assets/certificates/ibm_rag.jpeg" download="IBM_RAG_Credential.jpeg" class="btn btn-sm btn-primary">Image</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 7: IBM SkillsBuild AI Ethics -->
+          <div class="cert-card glass-panel" data-reveal>
+            <div class="cert-img-wrap contain-img" onclick="openCertModal('ibm_ethics')">
+              <img src="assets/certificates/ibm_generative_ai_ethics.jpeg" alt="IBM SkillsBuild Ethical Considerations for Generative AI" loading="lazy" />
+              <div class="cert-img-overlay">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Click to View Badge</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-meta-row">
+                <span class="cert-org-badge badge-ibm">IBM SkillsBuild</span>
+                <span class="cert-date">Credential</span>
+              </div>
+              <h3 class="cert-title">Ethical Considerations for Generative AI</h3>
+              <p class="cert-desc">
+                Professional credential covering AI governance, identifying algorithmic bias, ensuring transparency, privacy preservation, intellectual property rights, and AI safety guardrails.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-status verified">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg> IBM Verified
+                </span>
+                <div class="cert-card-actions">
+                  <button class="btn btn-sm btn-outline" onclick="openCertModal('ibm_ethics')">View</button>
+                  <a href="assets/certificates/ibm_generative_ai_ethics.jpeg" download="IBM_GenAI_Ethics_Credential.jpeg" class="btn btn-sm btn-primary">Image</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section I: Career Interests & Professional Profile -->
+    <section class="section" id="career">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Aspirations</span>
+          <h2 class="section-title">Career Interests & Focus Areas</h2>
+          <p class="section-subtitle">Target technical domains and internship goals aligned with my academic coursework
+            and skills.</p>
+        </div>
+
+        <div class="career-grid">
+          <div class="career-card" data-reveal>
+            <div class="career-number">01</div>
+            <h3>Artificial Intelligence & Computer Vision</h3>
+            <p>
+              Leveraging neural network architectures (like R-CNN), TensorFlow, and OpenCV to build intelligent vision
+              systems capable of object classification, localization, and automated visual inference.
+            </p>
+            <div class="career-tags">
+              <span>Deep Learning</span>
+              <span>R-CNN</span>
+              <span>OpenCV</span>
+            </div>
+          </div>
+
+          <div class="career-card" data-reveal>
+            <div class="career-number">02</div>
+            <h3>Data Science & Unsupervised Machine Learning</h3>
+            <p>
+              Building on my patent-published work with K-Means clustering to uncover latent patterns in complex
+              real-world data, behavioral analytics, and predictive modeling using Python, Pandas, and Scikit-learn.
+            </p>
+            <div class="career-tags">
+              <span>K-Means</span>
+              <span>Pandas</span>
+              <span>Feature Engineering</span>
+            </div>
+          </div>
+
+          <div class="career-card" data-reveal>
+            <div class="career-number">03</div>
+            <h3>Software & Systems Engineering</h3>
+            <p>
+              Developing robust backend software, CLI tools, and database-driven applications with structured logic,
+              clean OOP paradigms, MySQL data persistence, and rigorous algorithmic efficiency.
+            </p>
+            <div class="career-tags">
+              <span>Python</span>
+              <span>C Systems</span>
+              <span>MySQL</span>
+              <span>Algorithms</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="internship-banner glass-card" data-reveal>
+          <div class="banner-content">
+            <span class="badge-active">Industry Experience</span>
+            <h3>Full Stack Web Development Intern &bull; Syteos Labs LLP</h3>
+            <p>
+              "Successfully completed full-stack software development internship under the mentorship of CTO Vaibhav Ugile at Syteos Labs, Hinjawadi, Pune."
+            </p>
+          </div>
+          <a href="#internships" class="btn btn-primary">View Internship Details</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section J: Contributions & Participation -->
+    <section class="section section-dark" id="contributions">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Campus Engagement</span>
+          <h2 class="section-title">Contributions & Student Life</h2>
+          <p class="section-subtitle">Documented student involvement, college activities, and future event participation
+            at SIT Nagpur.</p>
+        </div>
+
+        <div class="contributions-grid">
+          <div class="contrib-card glass-panel" data-reveal>
+            <div class="contrib-icon">💡</div>
+            <div class="contrib-body">
+              <span class="contrib-date">2024 &ndash; Present</span>
+              <h3>Symbiosis Institute of Technology Academic & Lab Activities</h3>
+              <p>
+                Actively participating in computer engineering programming labs, technical assignments, and
+                collaborative student peer projects in C and Python at SIT Nagpur campus.
+              </p>
+            </div>
+          </div>
+
+          <div class="contrib-card glass-panel" data-reveal>
+            <div class="contrib-icon">📜</div>
+            <div class="contrib-body">
+              <span class="contrib-date">Published Intellectual Property</span>
+              <h3>Research & Patent Publication</h3>
+              <p>
+                Successfully collaborated on behavioral clustering research resulting in an officially published patent
+                for Customer Segmentation using Python algorithms.
+              </p>
+            </div>
+          </div>
+
+          <!-- Future/Editable Entry for New College Activities -->
+          <div class="contrib-card glass-panel editable-slot" data-reveal>
+            <div class="contrib-icon">🚀</div>
+            <div class="contrib-body">
+              <span class="contrib-date">Upcoming &bull; SIT Nagpur</span>
+              <h3>Technical Clubs, Hackathons & Event Participation</h3>
+              <p>
+                Open to participating in university hackathons, open-source initiatives, coding competitions, and
+                technical club events as undergraduate studies progress.
+              </p>
+              <span class="slot-hint">Editable section ready for new extracurricular logs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Social Media & Professional Profiles -->
+    <section class="section section-dark" id="socials">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Connect & Follow</span>
+          <h2 class="section-title">Social Media & Professional Profiles</h2>
+          <p class="section-subtitle">Connect with me across developer networks, code repositories, and professional
+            channels.</p>
+        </div>
+
+        <div class="socials-grid">
+          <!-- Card 1: GitHub -->
+          <div class="social-card glass-panel card-github" data-reveal>
+            <div class="social-card-top">
+              <div class="social-brand-icon icon-gh">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </div>
+              <span class="social-badge badge-active">Verified Profile</span>
+            </div>
+            <div class="social-card-body">
+              <h3 class="social-name">GitHub</h3>
+              <p class="social-handle">@arjunabalpande06</p>
+              <p class="social-desc">
+                Explore open-source repositories, algorithmic implementations in Python and C, R-CNN machine learning
+                notebooks, and web applications.
+              </p>
+            </div>
+            <div class="social-card-footer">
+              <a href="https://github.com/arjunabalpande06" target="_blank" rel="noopener noreferrer"
+                class="btn btn-sm btn-outline social-action-btn">
+                <span>View GitHub Profile</span>
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: LinkedIn -->
+          <div class="social-card glass-panel card-linkedin" data-reveal>
+            <div class="social-card-top">
+              <div class="social-brand-icon icon-in">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </div>
+              <span class="social-badge badge-active">Verified Profile</span>
+            </div>
+            <div class="social-card-body">
+              <h3 class="social-name">LinkedIn</h3>
+              <p class="social-handle">in/arjun-balpande-0a5114320</p>
+              <p class="social-desc">
+                Connect for engineering internship opportunities, computer science collaborations, and professional
+                career updates from SIT Nagpur.
+              </p>
+            </div>
+            <div class="social-card-footer">
+              <a href="https://www.linkedin.com/in/arjun-balpande-0a5114320/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-sm btn-primary social-action-btn">
+                <span>Connect on LinkedIn</span>
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: X / Twitter -->
+          <div class="social-card glass-panel card-x" data-reveal>
+            <div class="social-card-top">
+              <div class="social-brand-icon icon-x">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </div>
+              <span class="social-badge">Tech & AI Insights</span>
+            </div>
+            <div class="social-card-body">
+              <h3 class="social-name">X (Twitter)</h3>
+              <p class="social-handle">@arjun_balpande</p>
+              <p class="social-desc">
+                Following deep learning advancements, Python ecosystem updates, developer discussions, and tech
+                innovation threads.
+              </p>
+            </div>
+            <div class="social-card-footer">
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-sm btn-outline social-action-btn">
+                <span>Follow on X</span>
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: HackerRank -->
+          <div class="social-card glass-panel card-hackerrank" data-reveal>
+            <div class="social-card-top">
+              <div class="social-brand-icon icon-hr">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0a12 12 0 1 0 12 12A12.013 12.013 0 0 0 12 0zm3.896 16.586h-2.126V13.04H10.23v3.546H8.104V7.414h2.126v3.473h3.54V7.414h2.126z" />
+                </svg>
+              </div>
+              <span class="social-badge">Problem Solving</span>
+            </div>
+            <div class="social-card-body">
+              <h3 class="social-name">HackerRank</h3>
+              <p class="social-handle">@arjunabalpande</p>
+              <p class="social-desc">
+                Practicing core data structures, algorithms in Python and C, SQL querying challenges, and earning
+                problem-solving skill badges.
+              </p>
+            </div>
+            <div class="social-card-footer">
+              <a href="https://www.hackerrank.com/profile/arjunabalpande" target="_blank" rel="noopener noreferrer"
+                class="btn btn-sm btn-outline social-action-btn">
+                <span>View HackerRank Profile</span>
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5: Discord -->
+          <div class="social-card glass-panel card-discord" data-reveal>
+            <div class="social-card-top">
+              <div class="social-brand-icon icon-discord">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+                </svg>
+              </div>
+              <span class="social-badge">Student Hub</span>
+            </div>
+            <div class="social-card-body">
+              <h3 class="social-name">Discord</h3>
+              <p class="social-handle">arjun</p>
+              <p class="social-desc">
+                Engaging in college student developer communities, collaborative coding channels, and technical project
+                brainstorming.
+              </p>
+            </div>
+            <div class="social-card-footer">
+              <a href="https://discord.com/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-sm btn-outline social-action-btn">
+                <span>Join Developer Hub</span>
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 6: Direct Email -->
+          <div class="social-card glass-panel card-mail" data-reveal>
+            <div class="social-card-top">
+              <div class="social-brand-icon icon-email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <span class="social-badge badge-distinction">Direct Inbox</span>
+            </div>
+            <div class="social-card-body">
+              <h3 class="social-name">Direct Email</h3>
+              <p class="social-handle">arjunbalpande@gmail.com</p>
+              <p class="social-desc">
+                Direct primary email communication for recruiters, internship opportunities, and collaborative technical
+                initiatives.
+              </p>
+            </div>
+            <div class="social-card-footer">
+              <a href="mailto:arjunbalpande@gmail.com" class="btn btn-sm btn-glass social-action-btn">
+                <span>Send Direct Mail</span>
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Contact Section with JavaScript Validation -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Reach out for internship opportunities, technical collaborations, or project
+            queries.</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info Column -->
+          <div class="contact-info-panel glass-panel" data-reveal>
+            <h3>Contact Information</h3>
+            <p>Direct communication channels verified from my official resume.</p>
+
+            <div class="contact-items-list">
+              <div class="contact-entry">
+                <div class="entry-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="entry-label">Email Address</span>
+                  <a href="mailto:arjunbalpande@gmail.com" class="entry-value">arjunbalpande@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-entry">
+                <div class="entry-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="entry-label">Phone Number</span>
+                  <a href="tel:+918010871941" class="entry-value">+91 8010871941</a>
+                </div>
+              </div>
+
+              <div class="contact-entry">
+                <div class="entry-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="entry-label">Location</span>
+                  <span class="entry-value">Nagpur, Maharashtra, India &bull; 440010</span>
+                </div>
+              </div>
+
+              <div class="contact-entry">
+                <div class="entry-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="entry-label">Institution</span>
+                  <span class="entry-value">Symbiosis Institute of Technology (SIT)</span>
+                </div>
+              </div>
+
+              <div class="contact-entry">
+                <div class="entry-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="entry-label">GitHub</span>
+                  <a href="https://github.com/arjunabalpande06" target="_blank" rel="noopener noreferrer"
+                    class="entry-value">github.com/arjunabalpande06</a>
+                </div>
+              </div>
+
+              <div class="contact-entry">
+                <div class="entry-icon" style="color: #0a66c2;">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="entry-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/arjun-balpande-0a5114320/" target="_blank"
+                    rel="noopener noreferrer" class="entry-value">in/arjun-balpande-0a5114320</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resume Download Box -->
+            <div class="resume-download-card">
+              <div class="resume-badge-row">
+                <span class="badge-file">PDF Format</span>
+                <span class="badge-size">Verified Document</span>
+              </div>
+              <h4>Curriculum Vitae</h4>
+              <p>Download my comprehensive resume containing full education history and technical projects.</p>
+              <a href="assets/Arjun_Balpande_Resume.pdf" download="Arjun_Balpande_Resume.pdf"
+                class="btn btn-primary btn-block" id="btnContactDownloadResume">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form with Client-Side JavaScript Validation -->
+          <div class="contact-form-panel glass-panel" data-reveal>
+            <h3>Send a Message</h3>
+            <p>Fill out the form below. Client-side validation guarantees valid fields before submission.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="contactName">Your Name <span class="required-star">*</span></label>
+                <div class="input-wrap">
+                  <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. John Doe"
+                    required autocomplete="name">
+                </div>
+                <span class="form-error" id="nameError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Your Email Address <span class="required-star">*</span></label>
+                <div class="input-wrap">
+                  <input type="email" id="contactEmail" name="email" class="form-input"
+                    placeholder="e.g. john@example.com" required autocomplete="email">
+                </div>
+                <span class="form-error" id="emailError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Subject <span class="required-star">*</span></label>
+                <div class="input-wrap">
+                  <input type="text" id="contactSubject" name="subject" class="form-input"
+                    placeholder="e.g. Internship Inquiry / Collaboration" required>
+                </div>
+                <span class="form-error" id="subjectError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message <span class="required-star">*</span></label>
+                <div class="input-wrap">
+                  <textarea id="contactMessage" name="message" class="form-textarea" rows="5"
+                    placeholder="Write your message here..." required></textarea>
+                </div>
+                <span class="form-error" id="messageError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-status-msg" id="formStatusMsg" aria-live="polite"></div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="btnSubmitForm">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+                <span>Send Message</span>
+              </button>
+
+              <p class="form-backend-note">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="16" x2="12" y2="12" />
+                  <line x1="12" y1="8" x2="12.01" y2="8" />
+                </svg>
+                <span><strong>Developer Note:</strong> Validates inputs via JavaScript. You can wire this to Formspree,
+                  EmailJS, or any custom API endpoint.</span>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Section M: Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-badge">AB</span>
+            <span class="logo-text">Arjun</span>
+          </a>
+          <p class="footer-tagline">
+            Computer Science & Engineering Student &bull; Symbiosis Institute of Technology, Nagpur.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#internships">Internship</a></li>
+            <li><a href="#achievements">Patents & Honors</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#socials">Social Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Documents & Links</h4>
+          <ul class="footer-links">
+            <li><a href="assets/Arjun_Balpande_Resume.pdf" download>Resume (PDF)</a></li>
+            <li><a href="https://github.com/arjunabalpande06" target="_blank" rel="noopener noreferrer">GitHub
+                Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/arjun-balpande-0a5114320/" target="_blank"
+                rel="noopener noreferrer">LinkedIn Profile</a></li>
+            <li><a href="https://www.hackerrank.com/profile/arjunabalpande" target="_blank"
+                rel="noopener noreferrer">HackerRank Profile</a></li>
+            <li><a href="#projects">Projects Showcase</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> <strong>Arjun Arun Balpande</strong>. Built for JavaScript Lab CA3
+          Mini Project.
+        </p>
+        <p class="tech-stack-credit">
+          Designed with Vanilla HTML5, CSS3 & JavaScript.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top of page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <!-- Interactive Project Details Modal -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="projModalTitle"
+    tabindex="-1">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <div>
+          <span class="modal-tag" id="projModalTag">Project Case Study</span>
+          <h3 class="modal-title" id="projModalTitle">Project Title</h3>
+        </div>
+        <button class="modal-close" onclick="closeProjectModal()" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="projModalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-sm" onclick="closeProjectModal()">Close Modal</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
