@@ -28,16 +28,22 @@ if (dbUrl) {
   }
 }
 
-// Local file fallback path
-const DATA_DIR = path.join(process.cwd(), 'data');
-const DATA_FILE = path.join(DATA_DIR, 'analytics.json');
+const os = require('os');
+
+// Fallback file path (uses /tmp on Vercel serverless environment)
+const DATA_DIR = process.env.VERCEL ? os.tmpdir() : path.join(process.cwd(), 'data');
+const DATA_FILE = path.join(DATA_DIR, 'portfolio_analytics.json');
 
 function ensureLocalFile() {
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
-  }
-  if (!fs.existsSync(DATA_FILE)) {
-    fs.writeFileSync(DATA_FILE, JSON.stringify([], null, 2), 'utf-8');
+  try {
+    if (!fs.existsSync(DATA_DIR)) {
+      fs.mkdirSync(DATA_DIR, { recursive: true });
+    }
+    if (!fs.existsSync(DATA_FILE)) {
+      fs.writeFileSync(DATA_FILE, JSON.stringify([], null, 2), 'utf-8');
+    }
+  } catch (err) {
+    console.error('ensureLocalFile error:', err.message);
   }
 }
 
