@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin Analytics Dashboard | Arjun Balpande</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Chart.js CDN for interactive visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Dashboard Styling -->
+  <link rel="stylesheet" href="admin.css">
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23080c14' stroke='%2300f2fe' stroke-width='4'/><text x='50' y='64' font-family='sans-serif' font-weight='800' font-size='44' fill='%2300f2fe' text-anchor='middle'>AB</text></svg>">
+</head>
+
+<body class="admin-body">
+  <!-- Glowing Ambient Accents -->
+  <div class="glow-orb orb-top-left" aria-hidden="true"></div>
+  <div class="glow-orb orb-bottom-right" aria-hidden="true"></div>
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Loading Screen (Displayed while checking authentication) -->
+  <div class="auth-loading" id="authLoading">
+    <div class="spinner"></div>
+    <p>Verifying secure session...</p>
+  </div>
+
+  <!-- 1. AUTHENTICATION / LOGIN VIEW -->
+  <div class="login-wrapper hidden" id="loginView">
+    <div class="login-card">
+      <div class="login-header">
+        <div class="login-badge">
+          <span class="badge-dot"></span>
+          <span>Security Gateway</span>
+        </div>
+        <h1 class="login-title">Admin Dashboard</h1>
+        <p class="login-subtitle">Authenticate to access real-time visitor telemetry and portfolio analytics.</p>
+      </div>
+
+      <form id="loginForm" class="login-form" novalidate>
+        <div class="form-group">
+          <label for="adminPassword" class="form-label">Master Admin Password</label>
+          <div class="password-input-wrapper">
+            <input type="password" id="adminPassword" class="form-input" placeholder="Enter administrative password"
+              autocomplete="current-password" required>
+            <button type="button" id="togglePasswordBtn" class="btn-toggle-pw" aria-label="Toggle password visibility">
+              <svg id="eyeIcon" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </button>
+          </div>
+          <div class="input-hint">Protected with server-side HMAC session verification and rate limiting.</div>
+        </div>
+
+        <div id="loginError" class="login-error-msg hidden" role="alert"></div>
+
+        <button type="submit" id="loginSubmitBtn" class="btn btn-primary btn-block">
+          <span class="btn-text">Unlock Dashboard</span>
+          <span class="btn-spinner hidden"></span>
+        </button>
+      </form>
+
+      <div class="login-footer">
+        <a href="/" class="back-link">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="19" y1="12" x2="5" y2="12" />
+            <polyline points="12 19 5 12 12 5" />
+          </svg>
+          <span>Return to Portfolio</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. MAIN DASHBOARD VIEW (Visible only after successful authentication) -->
+  <div class="dashboard-wrapper hidden" id="dashboardView">
+    <!-- Top Navigation Bar -->
+    <header class="dash-header">
+      <div class="dash-brand">
+        <a href="/" class="brand-link" title="Visit Public Portfolio">
+          <span class="brand-badge">AB</span>
+          <div>
+            <span class="brand-name">Arjun Balpande</span>
+            <span class="brand-tag">Analytics Console</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Live Storage Status Badge -->
+      <div class="dash-status-pill" id="storageStatusBadge">
+        <span class="pulse-dot"></span>
+        <span id="storageStatusText">Connecting...</span>
+      </div>
+
+      <!-- Controls -->
+      <div class="dash-controls">
+        <div class="range-selector-wrapper">
+          <label for="timeRangeSelect" class="sr-only">Date Range</label>
+          <select id="timeRangeSelect" class="dash-select">
+            <option value="today">Today</option>
+            <option value="7d">Last 7 Days</option>
+            <option value="30d" selected>Last 30 Days</option>
+            <option value="all">All Time</option>
+          </select>
+        </div>
+
+        <button id="btnRefresh" class="btn btn-outline btn-sm" title="Refresh analytics data">
+          <svg class="icon-sm" id="refreshIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="23 4 23 10 17 10" />
+            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
+          </svg>
+          <span>Refresh</span>
+        </button>
+
+        <div class="export-dropdown">
+          <button id="btnExport" class="btn btn-outline btn-sm">
+            <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span>Export</span>
+          </button>
+          <div class="export-menu hidden" id="exportMenu">
+            <button class="export-item" onclick="exportData('csv')">Download as CSV</button>
+            <button class="export-item" onclick="exportData('json')">Download as JSON</button>
+          </div>
+        </div>
+
+        <button id="btnLogout" class="btn btn-danger btn-sm" title="Log out from admin session">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+            <polyline points="16 17 21 12 16 7" />
+            <line x1="21" y1="12" x2="9" y2="12" />
+          </svg>
+          <span>Logout</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Dashboard Container -->
+    <main class="dash-content container">
+
+      <!-- SECTION A: OVERVIEW SUMMARY CARDS -->
+      <section class="overview-section" aria-label="Key Performance Indicators">
+        <div class="stats-grid">
+          <!-- Total Visits -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-label">Total Profile Visits</span>
+              <div class="stat-icon-box cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+            </div>
+            <div class="stat-value" id="kpiTotalVisits">--</div>
+            <div class="stat-meta">
+              <span class="trend-pill" id="kpiRangeChange">0%</span>
+              <span class="meta-label">vs previous period</span>
+            </div>
+          </div>
+
+          <!-- Estimated Unique Visitors -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-label">Unique Visitors</span>
+              <div class="stat-icon-box purple" title="Privacy-preserving anonymous visitor token count">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+            </div>
+            <div class="stat-value" id="kpiUniqueVisitors">--</div>
+            <div class="stat-meta">
+              <span class="info-pill" title="Distinct hashed client identifiers">Privacy-Safe Token</span>
+            </div>
+          </div>
+
+          <!-- Visits Today -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-label">Visits Today</span>
+              <div class="stat-icon-box emerald">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 14 14" />
+                </svg>
+              </div>
+            </div>
+            <div class="stat-value" id="kpiVisitsToday">--</div>
+            <div class="stat-meta">
+              <span class="trend-pill" id="kpiTodayChange">0%</span>
+              <span class="meta-label">vs yesterday (<span id="kpiVisitsYesterday">0</span>)</span>
+            </div>
+          </div>
+
+          <!-- Visits Last 7 Days -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-label">Visits (Last 7 Days)</span>
+              <div class="stat-icon-box amber">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+              </div>
+            </div>
+            <div class="stat-value" id="kpiVisits7d">--</div>
+            <div class="stat-meta">
+              <span class="meta-label">30-day cumulative: <strong id="kpiVisits30d" class="highlight-text">--</strong></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION C: INTERACTIVE TRAFFIC CHARTS -->
+      <section class="charts-section" aria-label="Visual Analytics Charts">
+        <!-- Main Line Chart: Daily Visits Over Time -->
+        <div class="chart-card full-width">
+          <div class="chart-header">
+            <div>
+              <h2 class="chart-title">Daily Visits Over Time</h2>
+              <p class="chart-subtitle">Daily trend of page views and unique visitor interactions</p>
+            </div>
+            <div class="chart-badge">Timeline Telemetry</div>
+          </div>
+          <div class="chart-body" style="height: 320px; position: relative;">
+            <canvas id="dailyVisitsChart"></canvas>
+            <div id="dailyChartEmpty" class="chart-empty-state hidden">
+              <p>No traffic recorded for this date range yet.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="charts-grid-2">
+          <!-- Doughnut Chart: Device Breakdown -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div>
+                <h2 class="chart-title">Device Categories</h2>
+                <p class="chart-subtitle">Distribution across Desktop, Mobile, and Tablet</p>
+              </div>
+            </div>
+            <div class="chart-body doughnut-body">
+              <div style="height: 240px; position: relative;">
+                <canvas id="deviceChart"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doughnut Chart: New vs Returning Visitors -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div>
+                <h2 class="chart-title">New vs. Returning Visitors</h2>
+                <p class="chart-subtitle">Retention of visitors across sessions</p>
+              </div>
+            </div>
+            <div class="chart-body doughnut-body">
+              <div style="height: 240px; position: relative;">
+                <canvas id="visitorTypeChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="charts-grid-2">
+          <!-- Horizontal Bar: Most Visited Sections -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div>
+                <h2 class="chart-title">Most Visited Sections & Key Links</h2>
+                <p class="chart-subtitle">Engagement distribution across portfolio sections</p>
+              </div>
+            </div>
+            <div class="chart-body" style="height: 280px; position: relative;">
+              <canvas id="sectionsChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Bar Chart: Traffic Sources & Referrers -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div>
+                <h2 class="chart-title">Top Traffic Sources</h2>
+                <p class="chart-subtitle">Inbound domains referring visitors to your profile</p>
+              </div>
+            </div>
+            <div class="chart-body" style="height: 280px; position: relative;">
+              <canvas id="referrersChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION B & D: VISITOR ANALYTICS TABLE & RECENT ACTIVITY -->
+      <section class="logs-section" aria-label="Detailed Visitor Logs">
+        <div class="table-card">
+          <div class="table-card-header">
+            <div>
+              <h2 class="chart-title">Visitor Analytics Log</h2>
+              <p class="chart-subtitle">Privacy-conscious audit log of recent visits and engagement events</p>
+            </div>
+
+            <div class="table-filters">
+              <!-- Search Filter -->
+              <div class="search-input-box">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <input type="text" id="tableSearchInput" placeholder="Filter by section, browser, country..."
+                  class="table-search">
+              </div>
+
+              <!-- Event Type Filter -->
+              <select id="tableEventTypeSelect" class="dash-select sm">
+                <option value="all">All Events</option>
+                <option value="pageview">Page Views</option>
+                <option value="section_view">Section Engagements</option>
+                <option value="click">Clicks & Downloads</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Table Wrapper -->
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th>Event Type</th>
+                  <th>Visited Section / Page</th>
+                  <th>Referring Source</th>
+                  <th>Device & OS</th>
+                  <th>Browser</th>
+                  <th>Country / Region</th>
+                  <th>Visitor Type</th>
+                </tr>
+              </thead>
+              <tbody id="logsTableBody">
+                <tr>
+                  <td colspan="8" class="text-center py-6">Loading records...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Pagination Footer -->
+          <div class="table-footer">
+            <div class="table-pagination-info">
+              Showing <span id="pagStart">0</span> to <span id="pagEnd">0</span> of <span id="pagTotal">0</span> records
+            </div>
+            <div class="pagination-controls">
+              <button id="btnPrevPage" class="btn btn-outline btn-xs" disabled>Previous</button>
+              <span class="page-indicator" id="pagPageNum">Page 1 of 1</span>
+              <button id="btnNextPage" class="btn btn-outline btn-xs" disabled>Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: PRIVACY & TELEMETRY ETHICS STATEMENT -->
+      <footer class="dash-footer">
+        <div class="privacy-notice-box">
+          <div class="notice-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <div class="notice-content">
+            <h4>Privacy-Conscious Telemetry Notice</h4>
+            <p>
+              In accordance with ethical web telemetry standards, anonymous visitors are identified solely via non-reversible SHA-256 HMAC tokens. No raw IP addresses, precise GPS coordinates, personal email addresses, or unconsented personal identifiers are collected or stored.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Dashboard JavaScript Controller -->
+  <script src="admin.js"></script>
+</body>
+
+</html>
