@@ -81,7 +81,7 @@ function verifyPassword(password) {
   if (!password || typeof password !== 'string') return false;
 
   const adminHash = process.env.ADMIN_PASSWORD_HASH;
-  const adminPassword = process.env.ADMIN_PASSWORD || 'ArjunAdmin2026!Secure';
+  const adminPassword = process.env.ADMIN_PASSWORD || 'Arjun@@@@!!06';
 
   if (adminHash) {
     try {

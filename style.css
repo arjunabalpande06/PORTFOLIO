@@ -403,6 +403,31 @@ img {
   border-radius: var(--radius-full);
 }
 
+.nav-link-admin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+
+.nav-link-admin:hover {
+  color: var(--primary);
+  background: rgba(0, 242, 254, 0.1);
+  border-color: rgba(0, 242, 254, 0.35);
+  box-shadow: 0 0 12px rgba(0, 242, 254, 0.2);
+}
+
+.nav-link-admin svg {
+  width: 0.85rem;
+  height: 0.85rem;
+  flex-shrink: 0;
+}
+
 .nav-actions {
   display: flex;
   align-items: center;

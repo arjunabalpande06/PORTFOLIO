@@ -109,7 +109,7 @@ async function runTests() {
 
   // 6. Test Login with correct password
   const resCorrectLogin = await request('http://localhost:3000/api/auth?action=login', { method: 'POST' }, {
-    password: 'ArjunAdmin2026!Secure'
+    password: 'Arjun@@@@!!06'
   });
   assert(resCorrectLogin.statusCode === 200, 'Login with correct admin password succeeds (200 OK)');
 
