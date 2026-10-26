@@ -95,7 +95,7 @@ async function runTests() {
     event_type: 'click',
     path: '/',
     section: 'resume_download',
-    metadata: { label: 'Resume PDF', href: 'assets/Arjun_Balpande_Resume.pdf' },
+    metadata: { label: 'Resume PDF', href: 'assets/Arjun_Balpande_Resume_Updated.pdf' },
     visitor_id: 'test_visitor_uuid_002',
     session_id: 'test_session_uuid_002'
   });
